@@ -35,7 +35,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://spectacular-cascaron-d700c1.netlify.app",
+    origin: "*",
     credentials: true,
   },
 });
